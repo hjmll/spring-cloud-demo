@@ -25,6 +25,10 @@ public class UserController {
     //private String dateformat;
     @Autowired
     private PatternProperties properties;
+    @GetMapping("prop")
+    public PatternProperties properties(){
+        return properties;
+    }
 
     @GetMapping("now")
     public String now(){
